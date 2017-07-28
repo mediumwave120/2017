@@ -1,0 +1,247 @@
+/* *{padding: 0;margin: 0;}
+.main{
+    background: -webkit-linear-gradient(bottom right, #a6c479 , #dde0cd); 
+          background: -ms-linear-gradient(bottom right, #a6c479 , #dde0cd);
+          background: -moz-linear-gradient(bottom right, #a6c479 , #dde0cd);
+          background: -o-linear-gradient(bottom right, #a6c479 , #dde0cd); 
+    background: linear-gradient(bottom right, #a6c479 , #dde0cd); 标准的语法（必须放在最后）
+    background:#B8CD94;
+      }
+#container{
+	position: absolute;
+	width:360px;
+	height:300px;
+	background:#B8CD94;
+	border:1px solid gray;
+	transform: translate(140%, 0);
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	border-radius: 3px;
+	-webkit-border-radius: 10px;
+   	-webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+   	background: -webkit-linear-gradient(bottom right, #a6c479 , #dde0cd); Safari 5.1 - 6.0
+    background: linear-gradient(left top, #a6c479 , #dde0cd); 标准的语法（必须放在最后）
+}
+.lo{
+	position: absolute;
+	left:130px;
+	top:8%;
+	width:100px;
+	height:6px;
+	font-size:0;
+	background:#ADBF8F;
+	border:2px solid #CAD6B0;
+	-moz-border-radius: 6px; Firefox
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	behavior: url(border-radius.htc);
+	transform: translate(-50%, -50%);
+}
+.logo{
+	position: absolute;
+	left: 130px;
+	top:13.5%;
+	width:100px;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	transform: translate(-50%, -50%);
+}
+.sign{
+	position: absolute;
+	left: 5px;
+	top:20%;
+	transform: translate(-50%, -50%);
+}
+input{
+	margin: 10px;
+	width:250px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 3px;
+	background:#B8CD94;
+	color: black;
+	font-size: 15px;
+}
+.error_msg{
+	
+	position: absolute;
+	top:140%;
+	left:25%;
+	-webkit-transition:all 1s;
+	transition:all 1s;
+}
+.sign_in{
+	background:#ACC782;
+	position: absolute;
+	top:110%;
+	left: 4%;
+	width:250px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+	color:white;
+	background: -webkit-linear-gradient(bottom right, #a6c479 , #dde0cd); Safari 5.1 - 6.0
+          background: linear-gradient(left top, #a6c479 , #dde0cd); 标准的语法（必须放在最后）
+          -webkit-border-radius: 5px;
+   	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.validate{
+	width:125px;
+	position: absolute;
+}
+#safecode{
+	width:110px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top:73%;
+	left:48%
+}
+.msg{
+	color:red;
+	-webkit-transform:skewX(180deg);
+	transform:skewX(180deg);
+}
+
+@media screen and (max-width: 768px) {
+	#container{
+		-webkit-transform:scale(1.5);
+		-o-transform:scale(1.5);
+		-moz-transform:scale(1.5);
+		transform:scale(1.5);
+	}
+} */
+
+*{padding: 0;margin: 0;}
+		body {
+		    position: relative;
+		 
+ 		    background-image: -moz-linear-gradient(right top, #a6c479, #dde0cd); /* FF*/   
+		    background-image: -webkit-linear-gradient(right top, #a6c479, #dde0cd); /* Safari, Chrome*/   
+		    background-image: -o-linear-gradient(right top, #a6c479, #dde0cd); /* Opera */   
+		    background-image: -ms-linear-gradient(right top, #a6c479, #dde0cd); /* IE9*/   
+		    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6c479', endColorstr='#dde0cd'); /* IE6,IE7 */   
+		    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6c479', endColorstr='#dde0cd')"; /* IE8+ */ 
+    
+ 		    background-image: linear-gradient(right top, #a6c479, #dde0cd);  
+		}
+		#grad1,.lo,.logo,.sign{
+			-o-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-wbkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+		
+		#grad1,.lo,.sign_in{
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-o-border-radius: 5px;
+			-ms-border-radius: 5px;
+			border-radius: 5px;
+			
+		}
+		#grad1{
+			position: absolute;
+		    top: 50%;
+		    left: 50%;
+			width:360px;
+			height:300px;
+			/*border:1px solid gray;*/
+			
+    		-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		-o-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		-ms-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		/* background-image: -moz-linear-gradient(top right, #a6c479, #dde0cd); FF   
+    				    background-image: -webkit-linear-gradient(top right, #a6c479, #dde0cd); Safari, Chrome   
+    				    background-image: -o-linear-gradient(top right, #a6c479, #dde0cd); Opera   
+    				    background-image: -ms-linear-gradient(top right, #a6c479, #dde0cd); IE9   
+    				    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6c479', endColorstr='#dde0cd'); IE6,IE7   
+    				    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6c479', endColorstr='#dde0cd')"; IE8+ 
+    		    
+    		 		    background-image: linear-gradient(top right, #a6c479, #dde0cd);  */
+		}
+
+		.lo{
+			position: absolute;
+			left: 50%;
+			top:8%;
+			width:100px;
+			height:5px;
+			background:#ADBF8F;
+			border:2px solid #CAD6B0;
+			
+		}
+		.logo{
+			position: absolute;
+			left: 50%;
+			top:16%;
+			font-size:18px;
+			font-weight:bold;
+			color:white;
+			
+		}
+		.sign{
+			position: absolute;
+			left: 50%;
+			top:45%;
+			
+
+		}
+		input{
+			margin: 8px;
+			width:250px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 3px;
+			background:#B8CD94;
+			color: black;
+			font-size: 15px;
+		}
+		.error_msg{
+			
+			position: absolute;
+			top:140%;
+			left:25%;
+			-webkit-transition:all 1s;
+			transition:all 1s;
+		}
+		.sign_in{
+			position: absolute;
+			top:110%;
+			left: 4%;
+			width:250px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			text-decoration: none;
+			color:white;
+			/*border:1px solid gray;*/
+    		-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		-o-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		-ms-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    		box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+		}
+		.validate{
+			width:125px;
+		}
+		#safecode{
+			width:110px;
+			height: 30px;
+
+		}
+		.msg{
+			color:red;
+			-webkit-transform:skewX(180deg);
+			transform:skewX(180deg);
+		}
+
+		.placeholder{
+			color:gray;
+		}

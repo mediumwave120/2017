@@ -1,0 +1,56 @@
+最牛的防复制代码
+1.将此代码粘贴到body中可以有效防选中防复制和防鼠标右键
+    <script type="text/javascript">
+        document.body.oncontextmenu=document.body.ondragstart= document.body.onselectstart=document.body.onbeforecopy=function(){return false;};
+        document.body.onselect=document.body.oncopy=document.body.onmouseup=function(){document.selection.empty();};
+    </script>
+2.将此代码粘贴到body中可以有效防选中防复制和防鼠标右键
+    <script language="JavaScript">
+        document.oncontextmenu=new Function("event.returnValue=false;");
+        document.onselectstart=new Function("event.returnValue=false;");
+    </script>
+禁止查看网页源文件代码,插入网页即可。
+<body leftmargin="2" topmargin="0" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
+<noscript><iframe src="/blog/*>";</iframe></noscript>
+
+1.将彻底屏蔽鼠标右键 
+oncontextmenu="window.event.returnvalue=false"
+<table border oncontextmenu=return(false)><td>no</table> //可用于Table
+2.取消选取、防止复制
+<body onselectstart="return false">
+3.不准粘贴
+onpaste="return false"
+4.防止复制
+oncopy="return false;" oncut="return false;"
+5.防止被人frame
+<SCRIPT LANGUAGE=javascript><!-- if (top.location != self.location)top.location=self.location; // --></SCRIPT>
+6.网页将不能另存为
+<noscript><iframe src="/blog/*.html>";</iframe></noscript>
+7.改变连接是状态栏的显示内容
+<a href="http://www.toyean.com" onMo ... ;window.status='输入连接状态栏显示内容&rsquo;；return true">
+8.禁止网页中目标对象被下载(如图片) 
+下面的代码将帮助你禁止网页中目标对象被下载：
+<a href="javascript:void(0)" onMouseDown="alert('对不起!图片不能下载！')"><img src="图片地址" alt="" /></a>
+9.页面禁止刷新完全，最好在pop出来的窗口里用,没工具栏的
+<body onkeydown="KeyDown()" onbeforeunload="location=location" 
+oncontextmenu="event.returnValue=false">
+<script language="Javascript"><!-- 
+function KeyDown(){ 
+if ((window.event.altKey)&& 
+     ((window.event.keyCode==37)||   
+      (window.event.keyCode==39))){alert("请访问我的主页"); 
+    event.returnValue=false; 
+    } 
+if ((event.keyCode==8)||(event.keyCode==116)){//屏蔽 F5 刷新键 
+    event.keyCode=0; 
+    event.returnValue=false; 
+    } 
+if ((event.ctrlKey)&&(event.keyCode==78)){   //屏蔽 Ctrl+n 
+    event.returnValue=false; 
+    } 
+if ((event.shiftKey)&&(event.keyCode==121)){ //屏蔽 shift+F10 
+    event.returnValue=false; 
+    } 
+} 
+</script> 
+</body>
