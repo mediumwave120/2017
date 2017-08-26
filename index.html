@@ -407,22 +407,14 @@
 
     </div>
 </footer>
-	<script>
+	<script>	
+	  $('img,i').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
+	  $('h2').attr('data-scroll-reveal', 'enter top and move 50px over 1s');
+	  $('h2+p').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
+	  $('.media-right').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
+          window.scrollReveal = new scrollReveal({reset: true});
 
-		
-		$('img').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
-		$('i').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
-		$('.media-right').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
-			
-		
-		window.scrollReveal = new scrollReveal({reset: true});
-
-		
-
-	</script>
-
-    <script>
-    window.onload=function(){
+ 
         //window.screen.availWidth 
         if(window.screenLeft  <500){
         var swiper = new Swiper('.swiper-container', {
@@ -435,9 +427,8 @@
         scrollbarDraggable:true 
     });
     }
-    }
+ 
     
-     $('#myTab li:eq(0) a').tab('show').siblings();
 
 
     </script>
