@@ -11,176 +11,11 @@
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdn.bootcss.com/scrollReveal.js/0.1.2/scrollReveal.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-	<style>
-		body{
-			width: 100%;
-		}
-		article{margin-top: -20px;}
-		.margin-left-20{margin-left: 20px;}
-		.reg,.login{padding: 0 7px;color:white;}
-		.reg{border:10px solid #46be8a;background:#46be8a;}
-		.reg .login:hover{opacity: 0.8;}
-		.login{border:10px solid #62a8ea;background:#62a8ea;}
-		.login:hover{opacity: 0.8;}
-		.col-xs-3 img,.wh img{width:200px;height:230px;}
-    	.wh{width: 100%;}
-		.media-left{width:160px;height:120px;}
-		.media-right{text-align:left;}
-		.col-xs-6{height:135px;}
-		.ph{height:20px;}
-
-
-		.animation-slide-bottom{
-			position: absolute;
-			top:50%;
-			left:65%;
-			margin-left: -200px;
-			z-index: 10;
-			font-size: 32px;
-			color:white;
-			
-		}
-		.animation-slide-bottom2{
-			position: absolute;
-			z-index: 10;
-			top:40%;
-			left:65%;
-			margin-left: -200px;
-			font-size: 24px;
-			color:white;
-			
-		}
-		
-		p.price{color:red;}
-		.col-xs-3 i{
-			font-size: 50px;
-			width: 120px; 
-   			height: 120px;
-   			text-align: center;
-   			line-height: 120px;
-   			background: #eee;
-   			border-radius: 60px;
-		}
-		.col-xs-3 i:hover{
-			background: #4E97D9;
-		}
-		
-		/*左右滑动*/
-		.swiper-slide a{
-			text-decoration: none;
-			line-height: 35px;    
-			font-size: 14px;
-			width: 80px;
-			background: #62a8ea;
-			color:white;
-
-		}
-   .swiper-container {
-        width: 80%;
-        height: 40px;
-        margin: 20px auto;
-        padding:10px 0;
-        text-align: center;
-    } 
-    .swiper-slide {
-
-        text-align: center;
-        font-size: 18px;
-
-        width: 80px;
-        
-        /* Center slide text vertically **/
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    .swiper-wrapper{margin-left: -25%;}
-   
-    
-		p.textp{
-				/*height:114px;*/
-
-				display: -webkit-box;  
-		      display: -moz-box;  
-		      overflow: hidden;  
-		      text-overflow: ellipsis;  
-		      word-break: break-all;  
-		      -webkit-box-orient: vertical;  
-		      -webkit-line-clamp:3; 
-			}
-		@media screen and (max-width: 990px){
-			ul.swiper-wrapper{margin-left: -42%;}
-			.col-xs-3{width: 50%;height: 290px;}
-			.col-xs-6{height:135px;}
-			.media-left{width:100px;height:75px;}
-			.media-left img{width:100px;height:75px;}
-			.media-right{width:245px;height:114px;}
-			.container-fulid{height: 180px;}
-			.animation-slide-bottom,.animation-slide-bottom{font-size: 20px;}
-			p.textp{
-				/*height:114px;*/
-
-				display: -webkit-box;  
-		      display: -moz-box;  
-		      overflow: hidden;  
-		      text-overflow: ellipsis;  
-		      word-break: break-all;  
-		      -webkit-box-orient: vertical;  
-		      -webkit-line-clamp:2; 
-			}
-		}
-		@media screen and (max-width: 767px) {
-			.reg{position: absolute;top:-208px;left: 100px;}
-			.login{position: absolute;top:-228px;left: 200px;}
-			.dw{position: absolute;top:50px;}
-			.col-xs-6{width: 100%;}
-			.media-right{height:114px;width: 100%;}
-			.ph{height:00px;}
-			/*
-			*p.textp{
-				width: 100%;
-				/*height:114px;*
-				display: -webkit-box;  
-		      display: -moz-box;  
-		      overflow: hidden;  
-		      text-overflow: ellipsis;  
-		      word-break: break-all;  
-		      -webkit-box-orient: vertical;  
-		      -webkit-line-clamp:3; 
-			}*/
-		}
-		@media screen and (max-width:450px ){
-		.col-xs-3 img{height: 160px;}
-		.col-xs-3{width: 100%;height: 220px;}
-		.list{width: 50%;}
-		.animation-slide-bottom,.animation-slide-bottom2{font-size: 16px;}
-		/*.row,.container,.navbar,#myCarousel{width: 320px;}*/
-			/*.col-xs-3{width:100%;height:290px;}*/
-			/*.col-xs-3{width: 100%;height: 290px;}*/
-		}
-
-		@media screen and (max-width:320px ){
-		.animation-slide-bottom,.animation-slide-bottom2{font-size: 16px;}
-		.row,.container,.navbar,#myCarousel{width: 320px;}
-			/*.col-xs-3 img,.wh img{width:100px;height:200px;}*/
-
-		} 
-		
-	</style>
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-
 	<!--头部导航 -->
-<header>
+	<header>
 		<nav class="navbar navbar-default" role="navigation">
 		    <div class="container-fluid" >
 			    <div class="navbar-header">
@@ -219,7 +54,7 @@
 	<article>
 		<!--图片轮播 -->
 		<div id="myCarousel" class="carousel slide" style='background:grey;'>
-				<!-- 轮播（Carousel）指标 -->
+			<!-- 轮播（Carousel）指标 -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -234,13 +69,13 @@
 				</div>
 				<div class="item">
 					<img src="https://show.metinfo.cn/muban/res013/323/upload/201605/1464083856.png" alt="Second slide">
-					<div class='animation-slide-bottom'>你一定可以</div>
-					<div class='animation-slide-bottom2'>我相信你</div>
+					<div class='animation-slide-bottom' data-scroll-reveal="enter bottom and move 50px over 0.83s">你一定可以</div>
+					<div class='animation-slide-bottom2' data-scroll-reveal="enter top and move 50px over 0.83s">我相信你</div>
 				</div>
 				<div class="item">
 					<img src="https://show.metinfo.cn/muban/M1032002/328/upload/201703/1488527073.jpg" alt="Second slide">
-					<div class='animation-slide-bottom'>先入为主，布局未来</div>
-					<div class='animation-slide-bottom2'>响应式布局，智能识别多种终端设备</div>
+					<div class='animation-slide-bottom' data-scroll-reveal="enter bottom and move 50px over 0.83s">先入为主，布局未来</div>
+					<div class='animation-slide-bottom2' data-scroll-reveal="enter top and move 50px over 0.83s">响应式布局，智能识别多种终端设备</div>
 				</div>
 				
 				<!-- 轮播（Carousel）导航 -->
@@ -304,39 +139,38 @@
 				<div class="tab-pane fade in active" id="all">
 					<div class="row">
 		                <div class="col-xs-3">
-		                     <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463968649.jpg&x=400&y=400" alt="1"/>
+		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463968649.jpg&x=400&y=400" alt="1"/>
 		                    <p >Apple Watch Sport</p>
 		                    <p class='price'>2288.00元</p>
 		                </div>
 		                <div class="col-xs-3">
-		                      <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463990444.jpg&x=400&y=400" alt="3"  />
+		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463990444.jpg&x=400&y=400" alt="3"  />
 		                    <p>ALPHA 2</p>
 							<p class='price'>7999.00元</p>
 		                </div>
 		                <div class="col-xs-3">
 		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463972218.jpg&x=400&y=400" alt="2"  />
-		                     <p>儿童手表</p>
+		                    <p>儿童手表</p>
 		                    <p class='price'>999.00元</p>
 		                </div>
 		                <div class="col-xs-3">
-		                     <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463992341.jpg&x=400&y=400" alt="1"  />
+		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463992341.jpg&x=400&y=400" alt="1"  />
 		                    <p>公子小白</p>
 							<p class='price'>1880.00元</p>
 		                </div>
 		                 <div  class="col-xs-3">
-		                   
-		                        <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463987967.jpg&x=400&y=400" alt="4" />                    
+		                   	<img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463987967.jpg&x=400&y=400" alt="4" />                    
 		                    <p>Gear VR</p>
 		                    <p class='price' class='price'> 1288.00元</p>
 		                </div>
 
 		                <div class="col-xs-3">		                   
-		                        <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463989303.jpg&x=400&y=400" alt="3" />		                    
+		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463989303.jpg&x=400&y=400" alt="3" />		                    
 		                    <p>Pico Neo</p>
 		                    <p class='price'>3399.00元</p>
 		                </div>
 		                <div class="col-xs-3">		                    
-		                        <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463993829.png&x=400&y=400" alt="3" />		                    
+		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463993829.png&x=400&y=400" alt="3" />		                    
 		                    <p>Phantom 4</p>
 		                    <p class='price'>9999.00元</p>
 		                </div>
@@ -348,34 +182,34 @@
 					<div class="row">
 						<div class="col-xs-12">
 							 <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463968649.jpg&x=400&y=400" alt="1"   />
-		                    <p>Apple Watch Sport</p>
-		                    <p class='price'>2288.00元</p>
+							<p>Apple Watch Sport</p>
+							 <p class='price'>2288.00元</p>
 						</div>						
 					</div>		                                      
-	            </div>
+				</div>
 				<!-- 智能眼镜 -->
 				<div class="tab-pane fade wh" id="a2">
-	                <div class="row">
+					<div class="row">
 						<div class="col-xs-12">
-	                        <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463987967.jpg&x=400&y=400" alt="4"/>        
-	                    	<p>Gear VR</p>
-	                    	<p class='price' class='price'> 1288.00元</p>
+							<img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463987967.jpg&x=400&y=400" alt="4"/>        
+							<p>Gear VR</p>
+							<p class='price' class='price'> 1288.00元</p>
 						</div>
-	           		</div>
-	            </div>
-	            <!-- 机器人 -->
+					</div>
+				</div>
+	            	<!-- 机器人 -->
 				<div class="tab-pane fade wh" id="a3">
-	                <div class="row">
+		            <div class="row">
 						<div class="col-xs-12">
-	                    	<img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463990444.jpg&x=400&y=400" alt="4"/> 
-	               			<p>ALPHA 2</p>
-	               			<p class='price' class='price'> 7999.00元</p>
-	                	</div>
-	           		</div>
-	            </div>
-	             <!-- 体感车 -->
+		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463990444.jpg&x=400&y=400" alt="4"/> 
+		               		<p>ALPHA 2</p>
+		               		<p class='price' class='price'> 7999.00元</p>
+		                </div>
+		           	</div>
+		        </div>
+	            <!-- 体感车 -->
 				<div class="tab-pane fade wh" id="a4">
-	                <div class="row">
+	               	<div class="row">
 						<div class="col-xs-12">
 	                    	<img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463993502.jpg&x=400&y=400" alt="4"/>                 
 	               			<p>九号平衡车</p>
@@ -383,16 +217,15 @@
 	                	</div>
 	           		</div>
 	            </div>
-				 <!-- 无人机 -->
+				<!-- 无人机 -->
 				<div class="tab-pane fade wh" id="a5">
-	                <div class="row">
+		            <div class="row">
 						<div class="col-xs-12">
-	                    	<img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463993829.png&x=400&y=400" alt="4"/>                 
-	                		<p>Phantom 4</p>
-		            		<p class='price'>9999.00元</p>
-
-	            		</div>	
-	      			</div>
+		                    <img src="https://show.metinfo.cn/muban/res013/323/include/thumb.php?dir=upload/201605/1463993829.png&x=400&y=400" alt="4"/>                 
+		                	<p>Phantom 4</p>
+			            	<p class='price'>9999.00元</p>
+						</div>	
+		      		</div>
 				</div>
 			</div>
 		</div>
@@ -401,8 +234,7 @@
 		<div class="container text-center">
 			<h2>博客资讯</h2>
 			<p style='color:#5e7387;'>分享最新科技资讯，关注智能硬件</p>
-			<p style='height:50px;'></p>
-			
+			<p style='height:50px;'></p>			
 			<div class="row">
 				<div class="col-xs-6">
 					<div class="media-left">
@@ -571,34 +403,24 @@
 
     </div>
 </footer>
-	<script>		
-		$('img').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
-		$('i').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
-		$('.media-right').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
-	
-		window.scrollReveal = new scrollReveal({reset: true});
-
-	</script>
-
-    <script>
-    window.onload=function(){
-        //window.screen.availWidth 
-        if(window.screenLeft  <500){
-        var swiper = new Swiper('.swiper-container', {
-        scrollbar: '.swiper-scrollbar',
-        scrollbarHide: true,
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: 1,
-        grabCursor: false,
-        scrollbarDraggable:true 
-    });
-    }
-    }
-    
+<script>		
+	$('img').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
+	$('i').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
+	$('.media-right').attr('data-scroll-reveal', 'enter bottom and move 50px over 1s');
+	window.scrollReveal = new scrollReveal({reset: true});
+	if(window.screenLeft  <500){
+        	var swiper = new Swiper('.swiper-container', {
+		scrollbar: '.swiper-scrollbar',
+		scrollbarHide: true,
+		slidesPerView: 'auto',
+		centeredSlides: true,
+		spaceBetween: 1,
+		grabCursor: false,
+		scrollbarDraggable:true 
+   
+	    	}
+    	}
      $('#myTab li:eq(0) a').tab('show').siblings();
-
-
     </script>
 </body>
 </html>
